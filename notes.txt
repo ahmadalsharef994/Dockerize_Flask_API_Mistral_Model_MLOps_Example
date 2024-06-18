@@ -1,0 +1,51 @@
+1. Create the following Flask folder structure
+
+flask_llama_project/
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── config.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_routes.py
+│
+├── .env
+├── requirements.txt
+└── run.py
+
+
+2. Define dependencies in requirements.text
+
+flask
+duckduckgo-search
+wandb
+langchain_community
+langchain_experimental
+datasets
+transformers[torch]
+llama-cpp
+torch
+python-dotenv
+llama-cpp-python
+accelerator
+
+3. set up environment variables:
+
+FLASK_APP=run.py
+FLASK_ENV=development
+SECRET_KEY=your_secret_key
+MODEL_PATH=/path/to/your_model.gguf
+
+4. app/__init__ should have flask create app
+5. app/config.py should have environment variables loading
+6. run.pu is the entry point for the app and app.run on host:flask_llama_project
+
+7. create venv and install requirements:
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+

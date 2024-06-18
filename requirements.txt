@@ -1,0 +1,12 @@
+flask
+duckduckgo-search
+wandb
+langchain_community
+langchain_experimental
+datasets
+transformers[torch]
+llama-cpp
+torch
+python-dotenv
+llama-cpp-python
+accelerator
