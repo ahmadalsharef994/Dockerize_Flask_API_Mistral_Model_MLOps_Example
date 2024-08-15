@@ -44,8 +44,9 @@ MODEL_PATH=/path/to/your_model.gguf
 
 7. create venv and install requirements:
 
-python3 -m venv venv
-source venv/bin/activate
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\myenv1\Scripts\activate
+pip install Flask
 
 pip install -r requirements.txt
 
